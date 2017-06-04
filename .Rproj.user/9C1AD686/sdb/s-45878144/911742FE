@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: pwrAB\nType: Package\nTitle: Power analysis for AB testing\nVersion: 0.1.0\nAuthor@R: person(\"William\", \"Cha\", email = \"william.minseuk.cha@gmail.com\", \n               role = c(\"aut\", \"cre\"))\nMaintainer: William Cha <william.minseuk.cha@gmail.com>\nDescription: Power analysis for AB testing. The calculations are based on the Welch t-test, which \n  is generally preferred over the Student t-test when sample sizes and variances of the two groups are\n  unequal, which is frequently the case in AB testing. In such situations, the Student t-test will give \n  biased results, unlike the Welch t-test.\nLicense: GPL (>= 3)\nEncoding: UTF-8\nLazyData: true\nURL: http://github.com/williamcha/pwrAB\nBugReports: http://github.com/williamcha/pwrAB/issues\nDepends: R (>= 3.3.1)\nRoxygenNote: 6.0.1\nSuggests: testthat\n",
+    "created" : 1496534731253.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1934562886",
+    "id" : "911742FE",
+    "lastKnownWriteTime" : 1496615894,
+    "last_content_update" : 1496615894,
+    "path" : "~/Desktop/pwrAB/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
