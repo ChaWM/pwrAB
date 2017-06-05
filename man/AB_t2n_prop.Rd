@@ -29,7 +29,7 @@ must be one of "two_sided" (default), "greater" or "less"}
 }
 \value{
 Object of class "power.htest", a list of the arguments
-(including the computed one) augmented with method and note elements.
+(including the computed one).
 }
 \description{
 \code{AB_t2n_prop} performs the power analysis for AB testing, and when
@@ -42,7 +42,7 @@ Exactly one of the parameters 'prop_A', 'prop_B', 'N', 'percent_B', 'sig_level',
     from the others. The standard deviations for each group are calculated using the
     formula sqrt(prop * (1 - prop)).
     When 'percent_B' is the parameter omitted,
-    two solutions may exist, in which case the smaller value will be returned
+    two solutions may exist, in which case the smaller value will be returned.
     For two_sided tests, when 'prop_A' or 'prop_B' is omitted, two solutions may exist,
     in which case both will be reported
 }
@@ -56,4 +56,5 @@ AB_t2n_prop(prop_A = .2, prop_B = .25,
 AB_t2n_prop(prop_A = .2, N = 3000, percent_B = .3,
 power = .8, sig_level = .05,
 alternative = 'two_sided')
+
 }

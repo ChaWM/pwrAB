@@ -33,6 +33,8 @@
 #' # Search for sample size required to satisfy other parameters
 #' AB_t2n(percent_B = .3, mean_diff = .15, sd_A = 1,
 #' sd_B = 2, sig_level = .05, power = .8, alternative = 'two_sided')
+#'
+#' @export
 AB_t2n <-
   function (N = NULL, percent_B = NULL,
             mean_diff = NULL, sd_A, sd_B,
@@ -64,6 +66,7 @@ AB_t2n <-
     alternative <- match.arg(alternative)
     test_type <- switch(alternative, less = 1, two_sided = 2, greater = 3)
 
+    ### Code for power analysis (will be evaluated later)
     if (test_type == 2 && !is.null(mean_diff)){
       mean_diff <- abs(mean_diff)
     }
@@ -111,6 +114,7 @@ AB_t2n <-
       })
     }
 
+    ### Evaluation for omitted parameter
     if (is.null(power)) {
       power <- eval(power_eval)
     } else if (is.null(N)) {

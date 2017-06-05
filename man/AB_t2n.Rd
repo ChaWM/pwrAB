@@ -31,7 +31,7 @@ must be one of "two_sided" (default), "greater" or "less"}
 }
 \value{
 Object of class "power.htest", a list of the arguments
-(including the computed one) augmented with method and note elements.
+(including the computed one).
 }
 \description{
 \code{AB_t2n} performs the power analysis for AB testing. It uses the Welch t-test,
@@ -51,4 +51,5 @@ sd_B = 2, sig_level = .05, alternative = 'two_sided')
 # Search for sample size required to satisfy other parameters
 AB_t2n(percent_B = .3, mean_diff = .15, sd_A = 1,
 sd_B = 2, sig_level = .05, power = .8, alternative = 'two_sided')
+
 }

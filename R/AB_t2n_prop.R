@@ -39,6 +39,8 @@
 #' AB_t2n_prop(prop_A = .2, N = 3000, percent_B = .3,
 #' power = .8, sig_level = .05,
 #' alternative = 'two_sided')
+#'
+#' @export
 AB_t2n_prop <-
   function (prop_A = NULL, prop_B = NULL,
             N = NULL, percent_B = NULL,
@@ -68,6 +70,7 @@ AB_t2n_prop <-
     alternative <- match.arg(alternative)
     test_type <- switch(alternative, less = 1, two_sided = 2, greater = 3)
 
+    ### Code for power analysis (will be evaluated later)
     if (test_type == 2 && !is.null(mean_diff)){
       mean_diff <- abs(mean_diff)
     }
@@ -123,6 +126,7 @@ AB_t2n_prop <-
       })
     }
 
+    ### Evaluation for omitted parameter
     if (is.null(power)) {
       power <- eval(power_eval)
     } else if (is.null(N)) {
