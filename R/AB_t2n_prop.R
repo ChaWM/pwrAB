@@ -40,6 +40,7 @@
 #' power = .8, sig_level = .05,
 #' alternative = 'two_sided')
 #'
+#' @importFrom stats uniroot
 #' @export
 AB_t2n_prop <-
   function (prop_A = NULL, prop_B = NULL,
@@ -71,9 +72,6 @@ AB_t2n_prop <-
     test_type <- switch(alternative, less = 1, two_sided = 2, greater = 3)
 
     ### Code for power analysis (will be evaluated later)
-    if (test_type == 2 && !is.null(mean_diff)){
-      mean_diff <- abs(mean_diff)
-    }
     if (test_type == 1){
       power_eval <- quote({
         mean_diff = prop_B - prop_A
@@ -187,7 +185,6 @@ AB_t2n_prop <-
                    percent_B = percent_B,
                    prop_A = prop_A,
                    prop_B = prop_B,
-                   mean_diff = prop_B - prop_A,
                    sig_level = sig_level,
                    power = power,
                    alternative = alternative,

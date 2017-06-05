@@ -2,3 +2,4 @@
 
 export(AB_t2n)
 export(AB_t2n_prop)
+importFrom(stats,uniroot)

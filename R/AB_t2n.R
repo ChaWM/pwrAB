@@ -34,6 +34,7 @@
 #' AB_t2n(percent_B = .3, mean_diff = .15, sd_A = 1,
 #' sd_B = 2, sig_level = .05, power = .8, alternative = 'two_sided')
 #'
+#' @importFrom stats uniroot
 #' @export
 AB_t2n <-
   function (N = NULL, percent_B = NULL,
