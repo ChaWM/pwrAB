@@ -1,6 +1,6 @@
 Package: pwrAB
 Type: Package
-Title: Power analysis for AB testing
+Title: Power Analysis for AB Testing
 Version: 0.1.0
 Authors@R: person("William", "Cha", email = "william.minseuk.cha@gmail.com", 
                role = c("aut", "cre"))
@@ -9,7 +9,7 @@ Description: Power analysis for AB testing. The calculations are based on the We
   which is generally preferred over the Student t-test when sample sizes and variances of the two groups are
   unequal, which is frequently the case in AB testing. In such situations, the Student t-test will give 
   biased results due to using the pooled standard deviation, unlike the Welch t-test.
-License: GPL (>= 3) + file LICENSE
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Imports: stats
