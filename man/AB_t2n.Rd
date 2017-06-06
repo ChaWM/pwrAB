@@ -34,7 +34,7 @@ Object of class "power.htest", a list of the arguments
 (including the computed one).
 }
 \description{
-\code{AB_t2n} performs the power analysis for AB testing. It uses the Welch t-test,
+\code{AB_t2n} performs the power analysis for AB testing. It uses the Welch's t-test,
 which allows for the standard deviation to vary across groups.
 }
 \details{

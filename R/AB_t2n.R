@@ -1,7 +1,7 @@
 #' @title Two-Sample t-Test Power Analysis
 #'
 #' @description
-#' \code{AB_t2n} performs the power analysis for AB testing. It uses the Welch t-test,
+#' \code{AB_t2n} performs the power analysis for AB testing. It uses the Welch's t-test,
 #' which allows for the standard deviation to vary across groups.
 #'
 #' @param N Total number of observations (sum of observations for groups A and B)

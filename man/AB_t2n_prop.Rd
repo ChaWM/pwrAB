@@ -33,7 +33,7 @@ Object of class "power.htest", a list of the arguments
 }
 \description{
 \code{AB_t2n_prop} performs the power analysis for AB testing, and when
-    dependent variables are proportions (between 0 and 1). It uses the Welch t-test,
+    dependent variables are proportions (between 0 and 1). It uses the Welch's t-test,
     which allows for the standard deviation to vary across groups.
 }
 \details{
