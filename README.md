@@ -4,7 +4,7 @@
 
 The two functions in the pwrAB package use the Welch's unequal variance t-test instead, and will provide valid results even when sample sizes are unequal. [Delacre et al. (2017)](http://www.rips-irsp.com/articles/10.5334/irsp.82/) expands on this topic in more detail for those that are interested.
 
-The package is available on CRAN, and can be easily installed by typing:
+The package is [available on CRAN](https://cran.r-project.org/web/packages/pwrAB/index.html), and can be easily installed by typing:
 ```
 install.packages('pwrAB')
 ```
